@@ -1,0 +1,70 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("bomb hub", "Sentinel")
+
+local Tab1 = Window:NewTab("pet changer")
+local Tab2 = Window:NewTab("print")
+local Tab3 = Window:NewTab("dupe")
+local Tab4 = Window:NewTab("Egg")
+local Tab5 = Window:NewTab("Valetines")
+
+local Tab1Section = Tab1:NewSection("pet changer")
+local Tab2Section = Tab2:NewSection("print messaje")
+local Tab3Section = Tab3:NewSection("dupe pets")
+local Tab4Section = Tab4:NewSection("auto hatch")
+Local Tab5Section = Tab5:NeeSection("event")
+
+Tab1Section:NewButton("pet changer", "change pets only huge", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/vestyx/NewVesty/main/PetChanger.lua'))()
+end)
+
+Tab2Section:NewButton("print", "print messaje", function()
+    print("preston esti un gay")
+end)
+
+Tab3Section:NewButton("dupe", "dupe pets only huge", function()
+     loadstring(game:HttpGet("https://pastebin.com/raw/kHz2Zg3x", true))()
+end)
+
+Tab4Section:NewButton("beach egg", "open egg", function()
+     while true do
+local A_1 = "Golden Beachball Egg"
+local A_2 = false
+local A_3 = false
+local Event = game:GetService("ReplicatedStorage")["Buy Egg"]
+Event:InvokeServer(A_1, A_2, A_3)
+wait(0)
+end
+end)
+
+Tab4Section:NewButton("beachball", "open egg", function()
+      while true do
+local A_1 = "Beachball Egg"
+local A_2 = false
+local A_3 = false
+local Event = game:GetService("ReplicatedStorage")["Buy Egg"]
+Event:InvokeServer(A_1, A_2, A_3)
+wait (0)
+end
+end)
+
+Tab5Section:NewButton(" Valetine's Egg", "open egg", function()
+      while true do
+local A_1 = "Valentines Egg"
+local A_2 = false
+local A_3 = false
+local Event = game:GetService("ReplicatedStorage")["Buy Egg"]
+Event:InvokeServer(A_1, A_2, A_3)
+wait(0)
+end
+end)
+
+Tab5Section:NewButton("Golden Valetine's Egg", "open egg", function()
+while true do
+local A_1 = "Valentines Egg"
+local A_2 = false
+local A_3 = false
+local Event = game:GetService("ReplicatedStorage")["Buy Egg"]
+Event:InvokeServer(A_1, A_2, A_3)
+wait(0)
+end
+end)
